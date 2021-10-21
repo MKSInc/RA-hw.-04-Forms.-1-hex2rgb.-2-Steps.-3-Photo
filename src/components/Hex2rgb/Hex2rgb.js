@@ -2,10 +2,12 @@ import './hex2rgb.css';
 import {useState} from 'react';
 import convert from './convert/convert';
 
+const regHEX = /#[\dabcdef]{6}/;
+
 export default function Hex2rgb() {
 	const
 		[inputHex, setInputHex] = useState('#34495e'),
-	  [result, setResult] = useState(convert(inputHex)),
+		[result, setResult] = useState(convert(inputHex)),
 		[bgColor, setBgColor] = useState(convert(inputHex));
 
 	const handleInputHexChange = (event) => {
@@ -17,8 +19,7 @@ export default function Hex2rgb() {
 
 		if (value.length < 7) return;
 
-		const regexp = /#[\dabcdef]{6}/;
-		if (regexp.test(value.toLowerCase())) {
+		if (regHEX.test(value.toLowerCase())) {
 			const rgb = convert(value);
 			setResult(rgb);
 			setBgColor(rgb);
@@ -32,7 +33,7 @@ export default function Hex2rgb() {
 			<div className={`hex2rgb__body hex2rgb__body`} style={hex2rgbBgColor}>
 				<div className={'hex2rgb__content'}>
 					<div className={'hex2rgb__input-wrap'}>
-						<input value={inputHex} className={'hex2rgb__input'} onChange={handleInputHexChange}/>
+						<input className={'hex2rgb__input'} value={inputHex} onChange={handleInputHexChange}/>
 					</div>
 					<div className={'hex2rgb__result-wrap'}>
 						<div className={'hex2rgb__result'}>{result}</div>

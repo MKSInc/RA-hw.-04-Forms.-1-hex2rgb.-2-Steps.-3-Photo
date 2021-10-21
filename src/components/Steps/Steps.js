@@ -13,15 +13,15 @@ export default function Steps() {
 	const addResult = (result) => {
 		if (isEdit) setIsEdit(false);
 		if (results.some((item) => item.date === result.date)) {
-			setResults((prevResults) => prevResults.map((prevResults) => {
-					if (prevResults.date === result.date) {
+			setResults((prevResults) => prevResults.map((prevResult) => {
+					if (prevResult.date === result.date) {
 						if (isEdit) return result;
 						return {
-							date: prevResults.date,
-							distance: parseFloat(prevResults.distance) + parseFloat(result.distance)};
+							date: prevResult.date,
+							distance: parseFloat(prevResult.distance) + parseFloat(result.distance)};
 					}
 
-					return prevResults;
+					return prevResult;
 				})
 			)
 			return;

@@ -1,9 +1,12 @@
+import { nanoid } from 'nanoid';
+
 export default function fileToDataUrl (file) {
 	return new Promise((resolve, reject) => {
 		const fileReader = new FileReader();
 
 		fileReader.addEventListener('load', evt => {
 			resolve({
+				id: nanoid(),
 				dataUrl: evt.currentTarget.result,
 				title: file.name,
 			});

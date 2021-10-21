@@ -1,5 +1,9 @@
 import './form-steps.css'
 import PropTypes from 'prop-types';
+import { nanoid } from 'nanoid';
+
+const regDate = /^\d{2}\.\d{2}\.\d{4}$/;
+const regDistance = /^\d+\.?\d*$/;
 
 function FormSteps({ form, setForm, addResult }) {
 	const handleInputChange = (event) => {
@@ -9,13 +13,9 @@ function FormSteps({ form, setForm, addResult }) {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		const regexpDate = /^\d{2}\.\d{2}\.\d{4}$/;
-		if (!regexpDate.test(form.date)) return;
+		if (!regDate.test(form.date) || !regDistance.test(form.distance)) return;
 
-		const regexpDistance = /^\d+\.?\d*$/;
-		if (!regexpDistance.test(form.distance)) return;
-
-		addResult(form);
+		addResult({...form, id: nanoid()});
 		setForm({ date: '', distance: '' })
 	}
 

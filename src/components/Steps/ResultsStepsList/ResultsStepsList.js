@@ -1,12 +1,11 @@
 import './results-steps__list.css';
 import PropTypes from 'prop-types';
-import {nanoid} from 'nanoid';
 
 function ResultsStepsList({ results, handleRemove, handleEdit }) {
 	return (
 		<ul className={'results-steps__list'}>
 			{results.map((result) =>
-				<li className={'steps-columns'} key={nanoid()}>
+				<li className={'steps-columns'} key={result.date}>
 					<div className={'steps-columns__column-1'}>{result.date}</div>
 					<div className={'steps-columns__column-2'}>{result.distance}</div>
 					<div className={'steps-columns__column-3 results-steps__actions'}>
