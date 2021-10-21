@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/css/main.76bdd940.chunk.css",
-    "main.js": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/main.2a3ea417.chunk.js",
-    "main.js.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/main.2a3ea417.chunk.js.map",
+    "main.js": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/main.2701f7e5.chunk.js",
+    "main.js.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/main.2701f7e5.chunk.js.map",
     "runtime-main.js": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/runtime-main.16535d65.js",
     "runtime-main.js.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/runtime-main.16535d65.js.map",
-    "static/js/2.a61e93ec.chunk.js": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.a61e93ec.chunk.js",
-    "static/js/2.a61e93ec.chunk.js.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.a61e93ec.chunk.js.map",
+    "static/js/2.b0872963.chunk.js": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.b0872963.chunk.js",
+    "static/js/2.b0872963.chunk.js.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.b0872963.chunk.js.map",
     "index.html": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/index.html",
     "static/css/main.76bdd940.chunk.css.map": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/css/main.76bdd940.chunk.css.map",
-    "static/js/2.a61e93ec.chunk.js.LICENSE.txt": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.a61e93ec.chunk.js.LICENSE.txt"
+    "static/js/2.b0872963.chunk.js.LICENSE.txt": "/RA-hw.-4-Forms.-1-hex2rgb.-2-Steps.-3-Photo/static/js/2.b0872963.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16535d65.js",
-    "static/js/2.a61e93ec.chunk.js",
+    "static/js/2.b0872963.chunk.js",
     "static/css/main.76bdd940.chunk.css",
-    "static/js/main.2a3ea417.chunk.js"
+    "static/js/main.2701f7e5.chunk.js"
   ]
 }
